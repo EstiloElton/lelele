@@ -1,1 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+      .brody{
+        background: #F9B7FF;
+      }
+      html,body{
+        height: 100%;
+        margin: 0;
+      }
+      body{
+        align-items: center;
+        background-color: #eeee;
+        display: flex;
+        font-family: sans-serif;
+      }
+      .container{
+        margin: 0 auto;
+      }
+      .card, .envelope{
+        background-color: white;
+        box-shadow: -1px 8px 3px 0 rgba(0, 0, 0, 0.6);
+        height: 21em;
+        padding: 2em;
+        position:relative;
+        width: 15em;
+      }
+      .envelope{
+        background: #cb231c;
+        box-shadow: 0 3px 2px rgba(0, 0, 0, 0.6);
+        margin: -2em -2em;
+        position: absolute;
+        transform: rotate(-8deg);
+        z-index: -1;
+      }
+      h1{
+        font-size: 2.5em;
+        font-weight: 700;
+        margin: 0;
+        text-transform: uppercase;
+        width: 90%;
+      }
+      em{
+        color: #cc2119;
+        font-style: normal;
+      }
+      .heart{
+        bottom: 4em;
+        position: absolute;
+        right: 4em;
+      }
+      .heart::before,
+      .heart::after{
+        background-color: #cd321b;
+        border-radius: 50px 50px 0 0;
+        content: "";
+        height: 25px;
+        left: 15px;
+        position: absolute;
+        transform: rotate(-45deg);
+        transform-origin: 0 100%;
+        width: 15px;
 
+      }
+      .heart::after{
+        left: 0;
+        transform: rotate(45deg);
+        transform-origin: 100% 100%;
+      }
+      button{
+        background: auto;
+        background-color: white;
+        border: 0 solid white;
+      }
+      button:hover{
+        cursor: pointer;
+      }
+    </style>
+</head>
+
+<body class="brody">
+    <div class="container">
+      <div class="card">
+         <div class="envelope"></div>
+          <h1> Thank you for The happy Moments you gave me</h1>
+      <button><div class="heart"></div></button>
+      Happy Valentines Day
+    </div>
+          </div>
+
+</body>
+</html>
